@@ -43,7 +43,9 @@ To watch some training videos, visit http://www.youtube.com/user/c9ide
 
 ## PyExchange
 
-We will be using [PyExchange](https://pyexchange.readthedocs.org/en/latest) to manage room reservations
+We will be using [PyExchange](https://pyexchange.readthedocs.org/en/latest) to 
+manage room reservations. It is required to interface with Exchange systems like
+Office365
 
 ### Installing PyExchange
 
