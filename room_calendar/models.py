@@ -7,6 +7,9 @@ class OfficeLocation(models.Model):
     office_abbreviation = models.CharField(max_length=5)
     office_city = models.CharField(max_length=200)
     office_address = models.CharField(max_length=200)
+    
+    def __str__(self):
+        return self.office_city
 
 class Room(models.Model):
     # This is the short name of the room that matches the exchange connector filename
@@ -25,13 +28,10 @@ class Reservation(models.Model):
     reservation_title = models.CharField(max_length=200)
     # This is required by Exchange, but will only include the room's inbox
     reservation_attendees = models.CharField(max_length=200)
-    reservation_start = models.DateTimeField(default=datetime.datetime.now())
-    reservation_end = models.DateTimeField(default=datetime.datetime.now()
+    reservation_start = models.DateTimeField(default=timezone.now())
+    reservation_end = models.DateTimeField(default=timezone.now()
         + datetime.timedelta(minutes=15))
     reservation_owner = models.CharField(max_length=200)
-    reservation_body = "<html>\n<body>\n<h2>Title</h2>\n" 
-    + reservation_title + "\n<h2>Owner</h2>\n" + reservation_owner 
-    + "\n</body>\n</html>"
     
     def __str__(self):
         title = "Title: " + self.reservation_title
