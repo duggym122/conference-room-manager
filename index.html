@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>duggym122&#39;s Conference Room Manager by duggym122</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/duggym122/conference-room-manager">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>duggym122&#39;s Conference Room Manager</h1>
+            <h2>The Conference Room Manager will allow users to manage office locations, conference rooms, and reservations.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/duggym122/conference-room-manager/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/duggym122/conference-room-manager/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h2>
+<a id="status" class="anchor" href="#status" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Status</h2>
+
+<p><a href="https://travis-ci.org/duggym122/conference-room-manager"><img src="https://travis-ci.org/duggym122/conference-room-manager.svg?branch=master" alt="Build Status"></a></p>
+
+<h2>
+<a id="project-information" class="anchor" href="#project-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Information</h2>
+
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th align="center">Description</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>conference-room-manager</td>
+<td align="center">Django application to manage conference rooms and their reservations at multiple office locations</td>
+<td align="right">Pre-Release</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="join-up-on-getbadges" class="anchor" href="#join-up-on-getbadges" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Join Up On GetBadges!</h2>
+
+<p><a href="https://duggym122-conference-room-manager.getbadges.io/?ref=shield-game"><img src="https://duggym122-conference-room-manager.getbadges.io/shield/company/duggym122-conference-room-manager" alt="GetBadges Game"></a></p>
+
+<h2>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>The Conference Room Manager will allow administrative users to update available office locations, conference rooms tagged to those locations, and any reservations made against those rooms. Via the public-facing part of the application, users will be able to view the availability for a certain room, request access to that room on the fly (in addition to using their existing Exchange system to reserve the room), and see suggestions of other open rooms. </p>
+
+<p><strong>NOTE: This project is still in very early development, so it is subject to some very drastic, and potentially backwards-incompatible changes during the process.</strong></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<h3>
+<a id="django" class="anchor" href="#django" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Django</h3>
+
+<p>For information on how to install Django, see their documentation. Version 1.9 as of the time of this writing: <a href="https://docs.djangoproject.com/en/1.9/intro/install/">https://docs.djangoproject.com/en/1.9/intro/install/</a></p>
+
+<h4>
+<a id="support--documentation" class="anchor" href="#support--documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support &amp; Documentation</h4>
+
+<p>Django docs can be found at <a href="https://www.djangoproject.com/">https://www.djangoproject.com/</a></p>
+
+<p>You may also want to follow the Django tutorial to create your first application:
+<a href="https://docs.djangoproject.com/en/1.9/intro/tutorial01/">https://docs.djangoproject.com/en/1.9/intro/tutorial01/</a></p>
+
+<h3>
+<a id="pyexchange" class="anchor" href="#pyexchange" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PyExchange</h3>
+
+<p>This project uses PyExchange to manage room reservations via Exchange. It is required to interface with Exchange systems and, per their documentation, is only directly tested/developed against Exchange 2010. Their full documentation can be found here: <a href="https://pyexchange.readthedocs.org/en/latest">https://pyexchange.readthedocs.org/en/latest</a> </p>
+
+<p>In order to install, follow their provided directions: <a href="http://pyexchange.readthedocs.org/en/latest/#installation">http://pyexchange.readthedocs.org/en/latest/#installation</a> </p>
+
+<h2>
+<a id="running-conference-room-manager" class="anchor" href="#running-conference-room-manager" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Running conference-room-manager</h2>
+
+<p>1) Run syncdb command to sync models to database and create Django's default superuser and auth system</p>
+
+<pre><code>$ python manage.py migrate
+</code></pre>
+
+<p>2) Run Django</p>
+
+<pre><code>$ python manage.py runserver $IP:$PORT
+</code></pre>
+
+<h2>
+<a id="gnu-affero-general-public-license-v30" class="anchor" href="#gnu-affero-general-public-license-v30" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GNU Affero General Public License v3.0</h2>
+
+<p>The Conference Room Manager will allow users to manage office locations, conference rooms, and reservations.
+Copyright (C) 2016  Douglas Melvin</p>
+
+<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU Affero General Public License along with this program.  If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/duggym122">duggym122</a> can be found on <a href="https://github.com/duggym122/conference-room-manager">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
