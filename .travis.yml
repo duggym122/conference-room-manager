@@ -1,0 +1,18 @@
+language: python
+python:
+ - "2.7"
+
+# install requirements
+install:
+ - pip install -r requirements.txt
+
+# test script
+script: python -m unittest discover
+
+# safelist
+branches:
+  only:
+  - master
+  - develop # For general development work
+  - /^develop-.*$/ # For specific development work (e.g. develop-views)
+  - /^integrate-.*$/ # These branches are for integrating a new external tool (e.g. pyexchange, travis-ci)

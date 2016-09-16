@@ -1,0 +1,9 @@
+###### Requirements without Version Specifiers ######
+#
+pyexchange
+#
+
+###### Requirements with Version Specifiers ######
+#
+django ~= 1.9
+#
