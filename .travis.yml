@@ -4,7 +4,7 @@ python:
 
 # install requirements
 install:
- - pip install --user -r requirements.txt
+ - pip install -r requirements.txt
 
 # test script
 script: pytest
