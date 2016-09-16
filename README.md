@@ -1,5 +1,8 @@
 # conference-room-manager
 
+## Status
+[![Build Status](https://travis-ci.org/duggym122/conference-room-manager.svg?branch=master)](https://travis-ci.org/duggym122/conference-room-manager)
+
 ## Project Information
 | Package       | Description   | Version|
 | ------------- |:-------------:| -----:|
