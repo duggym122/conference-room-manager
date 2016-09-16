@@ -2,7 +2,15 @@ language: python
 python:
  - "2.7"
 
+# install requirements
 install:
  - pip install --user -r requirements.txt
 
+# test script
 script: pytest
+
+# safelist
+branches:
+  only:
+  - master
+  - stable
