@@ -13,4 +13,6 @@ script: pytest
 branches:
   only:
   - master
-  - stable
+  - develop # For general development work
+  - /^develop-.*$/ # For specific development work (e.g. develop-views)
+  - /^integrate-.*$/ # These branches are for integrating a new external tool (e.g. pyexchange, travis-ci)
