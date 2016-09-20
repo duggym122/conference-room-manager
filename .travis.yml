@@ -19,4 +19,4 @@ branches:
 
 # notification settings
 notifications:
-  - https://duggym122-conference-room-manager.getbadges.io/api/app/webhook/7ad27ee9-ab2a-4d44-b0c6-f19a0b9af667
+  webhooks: https://duggym122-conference-room-manager.getbadges.io/api/app/webhook/7ad27ee9-ab2a-4d44-b0c6-f19a0b9af667
