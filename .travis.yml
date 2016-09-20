@@ -16,3 +16,7 @@ branches:
   - develop # For general development work
   - /^develop-.*$/ # For specific development work (e.g. develop-views)
   - /^integrate-.*$/ # These branches are for integrating a new external tool (e.g. pyexchange, travis-ci)
+
+# notification settings
+notifications:
+  - https://duggym122-conference-room-manager.getbadges.io/api/app/webhook/7ad27ee9-ab2a-4d44-b0c6-f19a0b9af667
