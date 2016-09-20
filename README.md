@@ -6,7 +6,7 @@
 ## Project Information
 | Package       | Description   | Version|
 | ------------- |:-------------:| -----:|
-| conference-room-manager| Django application to manage conference rooms and their reservations at multiple office locations | Pre-Release |
+| conference-room-manager| Django application to manage conference rooms and their reservations at multiple office locations | v0.0.1 (Pre-Release) |
 
 ## Join Up On GetBadges!
 [![GetBadges Game](https://duggym122-conference-room-manager.getbadges.io/shield/company/duggym122-conference-room-manager)](https://duggym122-conference-room-manager.getbadges.io/?ref=shield-game)
