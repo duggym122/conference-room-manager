@@ -8,13 +8,13 @@
 ### Coveralls
 [![Coverage Status](https://coveralls.io/repos/github/duggym122/conference-room-manager/badge.svg?branch=master)](https://coveralls.io/github/duggym122/conference-room-manager?branch=master)
 
+### GetBadges Gamification
+[![GetBadges Game](https://duggym122-conference-room-manager.getbadges.io/shield/company/duggym122-conference-room-manager)](https://duggym122-conference-room-manager.getbadges.io/?ref=shield-game)
+
 ## Project Information
 |         Package         |                                            Description                                            | Version |
 | :---------------------: | :-----------------------------------------------------------------------------------------------: | :-----: |
 | conference-room-manager | Django application to manage conference rooms and their reservations at multiple office locations |  v0.0.1 |
-
-## Join Up On GetBadges!
-[![GetBadges Game](https://duggym122-conference-room-manager.getbadges.io/shield/company/duggym122-conference-room-manager)](https://duggym122-conference-room-manager.getbadges.io/?ref=shield-game)
 
 ## Overview
 The Conference Room Manager will allow administrative users to update available office locations, conference rooms tagged to those locations, and any reservations made against those rooms. Via the public-facing part of the application, users will be able to view the availability for a certain room, request access to that room on the fly (in addition to using their existing Exchange system to reserve the room), and see suggestions of other open rooms. 
