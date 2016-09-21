@@ -1,0 +1,10 @@
+###### Requirements without Version Specifiers ######
+#
+pyexchange
+#
+
+###### Requirements with Version Specifiers ######
+#
+django ~= 1.9
+django-bootstrap3 ~= 7.1.0
+#
