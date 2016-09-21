@@ -1,0 +1,14 @@
+[run]
+source = conference_room_manager,room_calendar
+
+[report]
+omit = 
+  */migrations/*
+  *.py[cod]
+  .installed.cfg
+  __pycache__
+  pip-log.txt
+  .coverage
+  .tox
+  nosetests.xml
+  exchange_service_objects/**
