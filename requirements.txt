@@ -7,4 +7,5 @@ coveralls
 ###### Requirements with Version Specifiers ######
 #
 django ~= 1.9
+coverage ~= 4.2
 #
