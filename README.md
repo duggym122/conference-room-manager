@@ -1,7 +1,12 @@
 # conference-room-manager
 
 ## Status
+
+### Travis-CI
 [![Build Status](https://travis-ci.org/duggym122/conference-room-manager.svg?branch=master)](https://travis-ci.org/duggym122/conference-room-manager)
+
+### Coveralls
+[![Coverage Status](https://coveralls.io/repos/github/duggym122/conference-room-manager/badge.svg?branch=master)](https://coveralls.io/github/duggym122/conference-room-manager?branch=master)
 
 ## Project Information
 |         Package         |                                            Description                                            | Version |
