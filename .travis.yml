@@ -6,8 +6,11 @@ python:
 install:
  - pip install -r requirements.txt
 
-# test script
-script: python -m unittest discover
+script: 
+ # Build with unit tests
+ - python -m unittest discover
+ # Run coverage testing
+ - coverage run setup.py test
 
 # safelist
 branches:
@@ -20,3 +23,7 @@ branches:
 # notification settings
 notifications:
   webhooks: https://duggym122-conference-room-manager.getbadges.io/api/app/webhook/7ad27ee9-ab2a-4d44-b0c6-f19a0b9af667
+
+# Post-steps for successful builds
+after_success:
+ coveralls
