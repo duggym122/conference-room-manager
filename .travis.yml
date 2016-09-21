@@ -6,11 +6,8 @@ python:
 install:
  - pip install -r requirements.txt
 
-script: 
- # Build with unit tests
- - python -m unittest discover
- # Run coverage testing
- - coverage run setup.py test
+# Build with unit tests and coverage
+script: coverage run setup.py test
 
 # safelist
 branches:
