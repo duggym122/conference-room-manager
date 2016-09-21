@@ -1,5 +1,5 @@
 [run]
-source = conference_room_manager,room_calendar
+source = room_calendar
 
 [report]
 omit = 
