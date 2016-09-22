@@ -20,4 +20,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^calendar/', include('room_calendar.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'', include('room_calendar.urls')),
+    url(r'^/', include('room_calendar.urls')),
 ]
